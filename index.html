@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resource</title>
+</head>
+<body>
+    
+    <div class="first-section">
+        <div class="top-text-container">
+            <h1>Welcome To Research Bank</h1>
+        </div>
+
+        <div class="add-button-container">
+            <button id="add-button">Add Research Item</button>
+        </div>
+    </div>
+
+    <div class="item-section">
+         <div class="research-item">
+            <div class="title-and-delete-container">
+                <a href="#" target="_blank">Biology Rudiments</a>
+
+                <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div class="description-of-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem aspernatur ea, animi perferendis adipisci?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="close-icon-container">
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </div>
+
+            <div class="modal-title-container">
+                <h3> Add Research Item </h3>
+            </div>
+
+            <form id="form">
+                <div class="input-group">
+                    <label for="resource-name">Resource Name</label>
+                    <input type="text" name="resource-name" id="resource-name" placeholder="e.g Resource Name">
+                </div>
+
+                <div class="input-group">
+                    <label for="resource-link">Resource Link</label>
+                    <input type="text" name="resource-link" id="resource-link" placeholder="https://biology.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Resource Description</label>
+                    <textarea type="text" name="description-of-item" id="description" placeholder="Enter Description"</textarea>
+                </div>
+
+                <div class="form-button-container">
+                    <button id="submitButton" type="submit">Add Item</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Bank</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="first-section">
+        <div class="top-text-container">
+            <h1>Welcome To Research Bank</h1>
+        </div>
+
+        <div class="add-button-container">
+            <button id="add-button">Add Research Item</button>
+        </div>
+    </div>
+
+    <div class="item-section" id="item-section">
+        <!-- Research items will be added here dynamically -->
+    </div>
+
+    <!-- Modal for Adding Research Item -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="close-icon-container">
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </div>
+
+            <div class="modal-title-container">
+                <h3>Add Research Item</h3>
+            </div>
+
+            <form id="form">
+                <div class="input-group">
+                    <label for="resource-name">Resource Name</label>
+                    <input type="text" id="resource-name" placeholder="e.g. Biology Fundamentals" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="resource-link">Resource Link</label>
+                    <input type="url" id="resource-link" placeholder="https://example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Resource Description</label>
+                    <textarea id="description" placeholder="Enter Description" required></textarea>
+                </div>
+
+                <div class="form-button-container">
+                    <button type="submit">Add Item</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./index.js" defer></script>
+</body>
+</html>
